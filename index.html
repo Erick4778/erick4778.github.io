@@ -1,0 +1,761 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Talentus – Recrutamento e Seleção em Tecnologia e outras áreas. Especialistas em conectar empresas e profissionais de TI (devs, dados, cloud, DevOps, QA, produto), além de administrativo, financeiro, comercial e marketing. Atuamos no Jabaquara/SP e remotamente para todo o Brasil. Processos ágeis e humanizados. Empresas: solicitem proposta. Candidatos: enviem seu currículo pelo WhatsApp."
+    />
+    <title>Talentus do RH | Recrutamento Tech e Seleção</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css?v=20260925-tech" />
+  </head>
+  <body>
+    <div class="bg-texture" aria-hidden="true"></div>
+
+    <header>
+      <div class="container nav-container">
+        <button class="logo brand-lockup" type="button" onclick="switchTab('inicio')" aria-label="Talentus do RH">
+          <span class="brand-mark" aria-hidden="true">
+            <img src="logo-talentus.png" alt="" />
+          </span>
+          <span class="brand-text">
+            <strong>Talentus</strong>
+            <small>do RH</small>
+          </span>
+        </button>
+        <button class="mobile-toggle" type="button" aria-label="Abrir menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <ul class="nav-menu">
+          <li>
+            <a href="javascript:void(0)" class="nav-link active" onclick="switchTab('inicio')">Início</a>
+          </li>
+          <li><a href="javascript:void(0)" class="nav-link" onclick="switchTab('sobre')">Sobre</a></li>
+          <li>
+            <a href="javascript:void(0)" class="nav-link" onclick="switchTab('servicos')">Serviços</a>
+          </li>
+          <li>
+            <a href="javascript:void(0)" class="nav-link" onclick="switchTab('empresas')">Empresas</a>
+          </li>
+          <li>
+            <a href="javascript:void(0)" class="nav-link" onclick="switchTab('candidatos')">Candidatos</a>
+          </li>
+          <li>
+            <a href="javascript:void(0)" class="nav-btn" onclick="switchTab('contato')">Entre em Contato</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main id="tab-inicio" class="tab-content active">
+      <section class="hero">
+        <canvas class="hero-network" id="hero-network" aria-hidden="true"></canvas>
+        <div class="container">
+          <div class="badge">Recrutamento Tech &amp; Seleção</div>
+          <h1>Sua próxima contratação tech começa aqui</h1>
+          <p class="hero-subtitle">
+            Trabalho com recrutamento e seleção em tecnologia — devs, dados, cloud, DevOps, QA e
+            produto — além de administrativo, financeiro, comercial e marketing. Atuo no
+            Jabaquara/SP e remotamente para todo o Brasil, com processos ágeis e humanizados.
+          </p>
+
+          <div class="hero-chips" aria-label="Áreas de atuação">
+            <span>Devs</span>
+            <span>Dados</span>
+            <span>Cloud</span>
+            <span>DevOps</span>
+            <span>QA</span>
+            <span>Produto</span>
+          </div>
+
+          <div class="hero-buttons">
+            <button class="btn-action btn-outline" type="button" onclick="switchTab('candidatos')">
+              Enviar Currículo
+            </button>
+            <button class="btn-action" type="button" onclick="switchTab('empresas')">Quero Contratar</button>
+          </div>
+
+          <div class="metrics-grid">
+            <div class="metric-card">
+              <h2>50+</h2>
+              <p>Talentos conectados a empresas</p>
+            </div>
+            <div class="metric-card">
+              <h2>20+</h2>
+              <p>Processos seletivos entregues</p>
+            </div>
+            <div class="metric-card">
+              <h2>100%</h2>
+              <p>Processos ágeis e humanizados</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="preview-section">
+        <div class="container about-layout">
+          <div class="about-image">
+            <div class="img-wrapper"></div>
+          </div>
+          <div class="about-text">
+            <div class="section-tag">Sobre</div>
+            <h2>Sobre a Talentus do RH</h2>
+            <p>
+              Trabalho com recrutamento e seleção em tecnologia e outras áreas, unindo método,
+              agilidade e escuta real para conectar empresas a profissionais de TI — devs, dados,
+              cloud, DevOps, QA e produto — além de áreas administrativas, financeiras, comerciais
+              e marketing. É o meu trabalho, feito de perto, vaga por vaga.
+            </p>
+
+            <div class="pillars-grid">
+              <div class="pillar-item">
+                <h4><i class="fa-solid fa-heart"></i> Dedicação</h4>
+                <p>Cada vaga é entendida antes da divulgação, triagem ou busca ativa.</p>
+              </div>
+              <div class="pillar-item">
+                <h4><i class="fa-solid fa-users"></i> Humanização</h4>
+                <p>Empresa e candidato recebem uma comunicação clara e respeitosa.</p>
+              </div>
+            </div>
+            <button class="btn-action btn-outline spaced-top" type="button" onclick="switchTab('sobre')">
+              Ler História Completa
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="process-section">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-tag">Como atuamos</div>
+            <h2>Do shortlist ágil ao hunting especializado em tech</h2>
+            <p>
+              O nível de apoio muda conforme a vaga: posições com volume de candidatos pedem
+              agilidade; vagas tech pleno/sênior e de liderança pedem mapeamento de mercado e
+              abordagem ativa.
+            </p>
+          </div>
+
+          <div class="process-grid">
+            <div class="process-card">
+              <span class="process-badge">Start</span>
+              <h3>Shortlist para vagas de volume</h3>
+              <p>Para vagas com perfil claro e boa disponibilidade de candidatos no mercado.</p>
+              <ul>
+                <li>Alinhamento rápido do perfil</li>
+                <li>Divulgação e triagem inicial</li>
+                <li>Entrega de candidatos mais aderentes</li>
+              </ul>
+            </div>
+            <div class="process-card">
+              <span class="process-badge">Completo</span>
+              <h3>Seleção com acompanhamento</h3>
+              <p>Para empresas que querem entrevistas iniciais, parecer e funil organizado.</p>
+              <ul>
+                <li>Criação ou ajuste da vaga</li>
+                <li>Entrevistas iniciais e organização do funil</li>
+                <li>Shortlist com comentários sobre cada perfil</li>
+              </ul>
+            </div>
+            <div class="process-card process-card-featured">
+              <span class="process-badge">Hunting</span>
+              <h3>Hunting especializado em tech</h3>
+              <p>Para devs, dados, cloud, DevOps, QA, produto, liderança e perfis escassos.</p>
+              <ul>
+                <li>Mapeamento de mercado e canais tech</li>
+                <li>Abordagem ativa de profissionais</li>
+                <li>Triagem consultiva antes da shortlist</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="process-note">
+            <strong>Em todos os formatos:</strong>
+            <span>alinhamento da vaga, comunicação clara e entrega organizada para facilitar a decisão.</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="vagas-section">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-tag">Oportunidades</div>
+            <h2>Vagas Abertas</h2>
+            <p>Vagas tech e de outras áreas que passam pelo radar da Talentus.</p>
+          </div>
+
+          <div class="job-filters" aria-label="Filtrar vagas">
+            <button class="job-filter active" type="button" data-filter="todas">Todas</button>
+            <button class="job-filter" type="button" data-filter="tech">Tech</button>
+            <button class="job-filter" type="button" data-filter="admin">Administrativo</button>
+            <button class="job-filter" type="button" data-filter="operacional">Operacional</button>
+            <button class="job-filter" type="button" data-filter="comercial">Comercial</button>
+            <button class="job-filter" type="button" data-filter="estagio">Estágio</button>
+          </div>
+
+          <div class="vagas-grid">
+            <div class="vaga-card" data-category="tech">
+              <span class="vaga-badge tech">Tech</span>
+              <h3>Desenvolvedor Frontend Jr</h3>
+              <div class="vaga-info">
+                <span><i class="fa-solid fa-location-dot"></i> Remoto</span>
+                <span><i class="fa-solid fa-briefcase"></i> CLT</span>
+              </div>
+              <p class="vaga-salario">R$ 3.000 - R$ 5.000</p>
+              <button class="vaga-btn" type="button" onclick="switchTab('candidatos')">Candidatar-se</button>
+            </div>
+
+            <div class="vaga-card" data-category="tech">
+              <span class="vaga-badge tech">Tech</span>
+              <h3>Desenvolvedor Full Stack Pleno</h3>
+              <div class="vaga-info">
+                <span><i class="fa-solid fa-location-dot"></i> Híbrido</span>
+                <span><i class="fa-solid fa-briefcase"></i> PJ/CLT</span>
+              </div>
+              <p class="vaga-salario">R$ 6.000 - R$ 9.000</p>
+              <button class="vaga-btn" type="button" onclick="switchTab('candidatos')">Candidatar-se</button>
+            </div>
+
+            <div class="vaga-card" data-category="admin">
+              <span class="vaga-badge admin">Administrativo</span>
+              <h3>Assistente Administrativo</h3>
+              <div class="vaga-info">
+                <span><i class="fa-solid fa-location-dot"></i> São Paulo, SP</span>
+                <span><i class="fa-solid fa-briefcase"></i> CLT</span>
+              </div>
+              <p class="vaga-salario">R$ 1.800 - R$ 2.500</p>
+              <button class="vaga-btn" type="button" onclick="switchTab('candidatos')">Candidatar-se</button>
+            </div>
+
+            <div class="vaga-card" data-category="operacional">
+              <span class="vaga-badge oper">Operacional</span>
+              <h3>Auxiliar de Logística</h3>
+              <div class="vaga-info">
+                <span><i class="fa-solid fa-location-dot"></i> Guarulhos, SP</span>
+                <span><i class="fa-solid fa-briefcase"></i> CLT</span>
+              </div>
+              <p class="vaga-salario">R$ 1.600 - R$ 2.200</p>
+              <button class="vaga-btn" type="button" onclick="switchTab('candidatos')">Candidatar-se</button>
+            </div>
+
+            <div class="vaga-card" data-category="comercial">
+              <span class="vaga-badge comercial">Comercial</span>
+              <h3>Vendedor Interno</h3>
+              <div class="vaga-info">
+                <span><i class="fa-solid fa-location-dot"></i> São Paulo, SP</span>
+                <span><i class="fa-solid fa-briefcase"></i> CLT</span>
+              </div>
+              <p class="vaga-salario">R$ 2.000 + comissão</p>
+              <button class="vaga-btn" type="button" onclick="switchTab('candidatos')">Candidatar-se</button>
+            </div>
+
+            <div class="vaga-card" data-category="tech estagio">
+              <span class="vaga-badge tech">Tech</span>
+              <h3>Estagiário de TI</h3>
+              <div class="vaga-info">
+                <span><i class="fa-solid fa-location-dot"></i> Híbrido</span>
+                <span><i class="fa-solid fa-graduation-cap"></i> Estágio</span>
+              </div>
+              <p class="vaga-salario">R$ 1.200 - R$ 1.800</p>
+              <button class="vaga-btn" type="button" onclick="switchTab('candidatos')">Candidatar-se</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonials-section">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-tag">Depoimentos</div>
+            <h2>Atendimento próximo faz diferença</h2>
+          </div>
+
+          <div class="testimonials-grid">
+            <div class="testimonial-card">
+              <div class="stars">★★★★★</div>
+              <p>
+                "Precisava de uma vendedora urgente e a Talentus me ajudou em poucos dias. Super
+                atenciosa e profissional!"
+              </p>
+              <h4>Ana Paula</h4>
+              <span>Dona de loja - Centro SP</span>
+            </div>
+            <div class="testimonial-card">
+              <div class="stars">★★★★★</div>
+              <p>
+                "Mesmo sendo iniciante, mostrou muita competência. Encontrou o dev que precisávamos
+                com um ótimo custo-benefício."
+              </p>
+              <h4>Rafael Santos</h4>
+              <span>Sócio - Startup de Apps</span>
+            </div>
+            <div class="testimonial-card">
+              <div class="stars">★★★★★</div>
+              <p>
+                "Atendimento muito próximo e humano. Indicou candidatos que realmente tinham o perfil
+                que eu buscava."
+              </p>
+              <h4>Juliana Ferreira</h4>
+              <span>Gerente - Escritório Contábil</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <main id="tab-sobre" class="tab-content">
+      <section class="inner-hero">
+        <div class="container">
+          <div class="section-tag">Quem sou</div>
+          <h2>Conheça a Talentus do RH</h2>
+          <p class="hero-subtitle">
+            Sou estudante de Recursos Humanos que já atua com recrutamento tech, construindo minha
+            base de clientes e meu portfólio vaga por vaga. A proposta é atender empresas de
+            tecnologia e de outros setores com seriedade, agilidade e foco em resultado — de forma
+            presencial no Jabaquara/SP e remota para todo o Brasil.
+          </p>
+        </div>
+      </section>
+
+      <section class="content-detail">
+        <div class="container about-layout">
+          <div class="about-text">
+            <h3>Minha História</h3>
+            <p>
+              Durante meus estudos em Recursos Humanos, percebi que empresas — principalmente as de
+              tecnologia — precisam contratar com rapidez e precisão, mas nem sempre têm tempo ou
+              estrutura para um processo seletivo bem feito. Foi daí que nasceu a Talentus do RH:
+              meu trabalho autônomo, que cresce a cada processo entregue.
+            </p>
+            <p>
+              Meu compromisso é com o resultado dos dois lados: entender a vaga, falar a linguagem de
+              quem é de tech e entregar perfis com contexto para a empresa decidir melhor — e o
+              candidato ser bem conduzido do início ao fim.
+            </p>
+          </div>
+          <div class="about-text glass-panel">
+            <h3>Missão, Visão e Valores</h3>
+            <div class="mvh-item">
+              <h4><i class="fa-solid fa-bullseye"></i> Missão</h4>
+              <p>Ajudar empresas a contratar profissionais de tecnologia e outras áreas com clareza, cuidado e agilidade — construindo, a cada entrega, um portfólio sólido.</p>
+            </div>
+            <div class="mvh-item">
+              <h4><i class="fa-solid fa-eye"></i> Visão</h4>
+              <p>Ser referência em recrutamento tech humanizado, ágil e bem organizado no Brasil.</p>
+            </div>
+            <div class="mvh-item">
+              <h4><i class="fa-solid fa-handshake"></i> Valores</h4>
+              <p>Honestidade, empatia, organização, comunicação clara e compromisso com o resultado.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="studies-section">
+        <div class="container">
+          <div class="section-header">
+            <h3>Formação e Estudos</h3>
+          </div>
+          <div class="services-grid">
+            <div class="service-box text-center">
+              <div class="service-icon"><i class="fa-solid fa-user-graduate"></i></div>
+              <h4>Graduação em Recursos Humanos</h4>
+              <p>Cursando formação completa em Gestão de RH.</p>
+            </div>
+            <div class="service-box text-center">
+              <div class="service-icon"><i class="fa-solid fa-certificate"></i></div>
+              <h4>Cursos de Recrutamento e Seleção</h4>
+              <p>Formações complementares em técnicas de R&S e entrevistas.</p>
+            </div>
+            <div class="service-box text-center">
+              <div class="service-icon"><i class="fa-solid fa-laptop-code"></i></div>
+              <h4>Especialização em Tech Recruiting</h4>
+              <p>Recrutamento de profissionais de tecnologia: devs, dados, cloud, DevOps, QA e produto.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <main id="tab-servicos" class="tab-content">
+      <section class="inner-hero">
+        <div class="container">
+          <div class="section-tag">Meus Serviços</div>
+          <h2>Como posso te ajudar</h2>
+          <p class="hero-subtitle">
+            Atuo em recrutamento tech e de outras áreas — para empresas que contratam e candidatos
+            que querem se preparar. O formato muda conforme a necessidade: triagem, shortlist,
+            seleção acompanhada ou hunting.
+          </p>
+        </div>
+      </section>
+
+      <section class="package-section compact-top">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-tag">Modelos de atendimento</div>
+            <h2>Modelos flexíveis, desenhados para cada vaga</h2>
+            <p>
+              Cada atendimento é definido depois de entender a vaga, o nível do profissional e a
+              urgência. Assim, o processo tem o cuidado que a contratação precisa — sem pesar no
+              orçamento.
+            </p>
+          </div>
+
+          <div class="package-group">
+            <div class="package-group-header">
+              <span class="badge">Para Empresas</span>
+              <h3>Formatos para contratar melhor</h3>
+            </div>
+            <div class="package-grid">
+              <article class="package-card">
+                <span class="package-tag green"><i class="fa-solid fa-list-check"></i> Start</span>
+                <h4>Shortlist Essencial</h4>
+                <p>Para vagas com perfil claro e boa disponibilidade de candidatos no mercado.</p>
+                <ul>
+                  <li>Alinhamento rápido da vaga</li>
+                  <li>Divulgação e triagem inicial</li>
+                  <li>Entrega de perfis mais aderentes</li>
+                </ul>
+                <div class="package-footer">
+                  <strong>Valor sob consulta</strong>
+                  <span>definido após briefing</span>
+                </div>
+              </article>
+
+              <article class="package-card package-card-featured">
+                <span class="package-tag"><i class="fa-solid fa-layer-group"></i> Completo</span>
+                <h4>Seleção Acompanhada</h4>
+                <p>Para empresas que querem entrevistas iniciais, parecer e organização do funil.</p>
+                <ul>
+                  <li>Ajuste do anúncio da vaga</li>
+                  <li>Triagem e entrevistas iniciais</li>
+                  <li>Shortlist com comentários</li>
+                </ul>
+                <div class="package-footer">
+                  <strong>Valor sob consulta</strong>
+                  <span>conforme escopo</span>
+                </div>
+              </article>
+
+              <article class="package-card">
+                <span class="package-tag blue"><i class="fa-solid fa-magnifying-glass-chart"></i> Hunting</span>
+                <h4>Busca Especializada em Tech</h4>
+                <p>Para devs, dados, cloud, DevOps, QA, produto, pleno/sênior e liderança.</p>
+                <ul>
+                  <li>Mapeamento de mercado tech</li>
+                  <li>Abordagem ativa de profissionais</li>
+                  <li>Relatório de aderência</li>
+                </ul>
+                <div class="package-footer">
+                  <strong>Valor sob consulta</strong>
+                  <span>por complexidade</span>
+                </div>
+              </article>
+
+              <article class="package-card">
+                <span class="package-tag amber"><i class="fa-solid fa-database"></i> Recorrente</span>
+                <h4>Radar de Talentos</h4>
+                <p>Para empresas que contratam com frequência e querem manter um banco aquecido.</p>
+                <ul>
+                  <li>Captação mensal de perfis</li>
+                  <li>Organização por área</li>
+                  <li>Indicações sob demanda</li>
+                </ul>
+                <div class="package-footer">
+                  <strong>Valor sob consulta</strong>
+                  <span>modelo mensal</span>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <div class="package-group candidate-package-group">
+            <div class="package-group-header">
+              <span class="badge soft">Para Candidatos</span>
+              <h3>Apoio de carreira com transparência</h3>
+            </div>
+            <div class="package-grid candidate-package-grid">
+              <article class="package-card">
+                <span class="package-tag"><i class="fa-solid fa-file-lines"></i> Currículo</span>
+                <h4>Revisão de Currículo</h4>
+                <p>Organização do conteúdo, clareza nas experiências e melhoria da apresentação.</p>
+                <div class="package-footer">
+                  <strong>Valor sob consulta</strong>
+                  <span>serviço separado de vagas</span>
+                </div>
+              </article>
+
+              <article class="package-card">
+                <span class="package-tag blue"><i class="fa-brands fa-linkedin"></i> LinkedIn</span>
+                <h4>Currículo + LinkedIn</h4>
+                <p>Ajuste do currículo junto com título, resumo e palavras-chave do LinkedIn.</p>
+                <div class="package-footer">
+                  <strong>Valor sob consulta</strong>
+                  <span>para melhorar presença</span>
+                </div>
+              </article>
+
+              <article class="package-card">
+                <span class="package-tag green"><i class="fa-solid fa-comments"></i> Entrevista</span>
+                <h4>Simulação de Entrevista</h4>
+                <p>Treino com perguntas reais, feedback de postura, comunicação e clareza.</p>
+                <div class="package-footer">
+                  <strong>Valor sob consulta</strong>
+                  <span>preparação profissional</span>
+                </div>
+              </article>
+
+              <article class="package-card">
+                <span class="package-tag amber"><i class="fa-solid fa-route"></i> Completo</span>
+                <h4>Plano de Recolocação</h4>
+                <p>Currículo, LinkedIn, simulação e direcionamento de busca de oportunidades.</p>
+                <div class="package-footer">
+                  <strong>Valor sob consulta</strong>
+                  <span>sem garantia de contratação</span>
+                </div>
+              </article>
+            </div>
+            <div class="package-note">
+              <strong>Importante:</strong>
+              <span>
+                o cadastro para vagas continua gratuito. Os serviços de preparação para candidatos são
+                pagos à parte e não garantem aprovação, entrevista ou contratação.
+              </span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="text-center section-cta">
+        <button class="btn-action" type="button" onclick="switchTab('contato')">Fale Comigo</button>
+      </div>
+    </main>
+
+    <main id="tab-empresas" class="tab-content">
+      <section class="inner-hero">
+        <div class="container">
+          <div class="section-tag">Para Empresas</div>
+          <h2>Contrate talentos tech com agilidade e segurança</h2>
+          <p class="hero-subtitle">
+            Me conte qual vaga você precisa preencher — dev, dados, cloud, DevOps, QA, produto ou
+            outras áreas. Eu avalio o melhor formato de apoio: shortlist, seleção acompanhada ou
+            hunting para perfis mais específicos.
+          </p>
+        </div>
+      </section>
+
+      <section class="form-section">
+        <div class="container max-form-width">
+          <div class="form-panel">
+            <h3>Conte sobre a vaga</h3>
+            <p class="form-intro">Com essas informações eu consigo indicar o melhor formato de processo.</p>
+            <form data-form-type="empresa" name="vaga-empresa" method="POST" enctype="multipart/form-data" data-netlify="true" data-netlify-honeypot="bot-field">
+              <input type="hidden" name="form-name" value="vaga-empresa" />
+              <p class="hidden-field"><label>Não preencha: <input name="bot-field" /></label></p>
+              <div class="form-group">
+                <label>Setor / Tipo de vaga</label>
+                <select required class="custom-select" name="setor">
+                  <option value="" disabled selected>Selecione o setor da vaga...</option>
+                  <option value="tech">Tecnologia, Dados &amp; Produto</option>
+                  <option value="admin">Administrativo &amp; Finanças</option>
+                  <option value="operacional">Operacional, Produção &amp; Logística</option>
+                  <option value="comercial">Comercial, Vendas &amp; Marketing</option>
+                  <option value="saude">Saúde, Estética &amp; Bem-estar</option>
+                  <option value="servicos">Serviços Gerais &amp; Facilities</option>
+                  <option value="outro">Outro Setor da Economia</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Descrição da vaga</label>
+                <textarea name="descricao" placeholder="Fale sobre o perfil..." rows="4"></textarea>
+              </div>
+              <div class="form-group">
+                <label>Anexar arquivo (opcional)</label>
+                <div class="file-upload-box">
+                  <input type="file" id="file-empresa" name="arquivo" />
+                  <label for="file-empresa">
+                    <i class="fa-solid fa-cloud-arrow-up"></i> PDF ou DOC até 5MB
+                  </label>
+                </div>
+              </div>
+              <button type="submit" class="btn-action full-width">Enviar Solicitação</button>
+              <p class="form-footer-note">
+                Seus dados serão usados apenas para contato e alinhamento da vaga, conforme a LGPD.
+              </p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <main id="tab-candidatos" class="tab-content">
+      <section class="inner-hero">
+        <div class="container">
+          <div class="section-tag">Trabalhe Conosco</div>
+          <h2>Buscando uma vaga tech ou querendo entrar no banco de talentos?</h2>
+          <p class="hero-subtitle">
+            Envie seus dados e área de interesse. Quando surgir uma oportunidade compatível — em
+            tecnologia ou em outras áreas — entro em contato para entender melhor seu perfil.
+          </p>
+        </div>
+      </section>
+
+      <section class="form-section">
+        <div class="container max-form-width">
+          <div class="form-panel">
+            <h3>Envie seus dados</h3>
+            <p class="form-intro">Preencha seus dados e anexe seu CV em PDF. Ele chega direto para mim pelo site e também abro uma conversa no WhatsApp para alinhar os próximos passos.</p>
+            <form data-form-type="candidato" name="curriculo-candidato" method="POST" enctype="multipart/form-data" data-netlify="true" data-netlify-honeypot="bot-field">
+              <input type="hidden" name="form-name" value="curriculo-candidato" />
+              <p class="hidden-field"><label>Não preencha: <input name="bot-field" /></label></p>
+              <div class="form-group">
+                <label>Nome Completo</label>
+                <input type="text" name="nome" placeholder="Seu nome" required />
+              </div>
+              <div class="form-group">
+                <label>Sua principal área de interesse</label>
+                <select required class="custom-select" name="area">
+                  <option value="" disabled selected>Selecione sua área profissional...</option>
+                  <option value="tech">Tecnologia, Dados &amp; Produto</option>
+                  <option value="admin">Administrativo &amp; Finanças</option>
+                  <option value="operacional">Operacional, Produção &amp; Logística</option>
+                  <option value="comercial">Comercial, Vendas &amp; Marketing</option>
+                  <option value="saude">Saúde, Estética &amp; Bem-estar</option>
+                  <option value="servicos">Serviços Gerais &amp; Facilities</option>
+                  <option value="outro">Outra Área / Mudar de Ramo</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Anexar Currículo *</label>
+                <div class="file-upload-box">
+                  <input type="file" id="file-cv" name="curriculo" accept=".pdf,application/pdf" required />
+                  <label for="file-cv"><i class="fa-solid fa-file-pdf"></i> PDF, até 5MB</label>
+                </div>
+              </div>
+              <button type="submit" class="btn-action full-width">Enviar Currículo</button>
+              <p class="form-footer-note">
+                Seus dados serão usados apenas para oportunidades e processos seletivos, conforme a LGPD.
+              </p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <main id="tab-contato" class="tab-content">
+      <section class="inner-hero">
+        <div class="container">
+          <div class="section-tag">Fale Comigo</div>
+          <h2>Vamos conversar?</h2>
+          <p class="hero-subtitle">
+            Me chame para falar sobre uma vaga, currículo, parceria ou dúvida sobre os serviços.
+          </p>
+        </div>
+      </section>
+
+      <section class="contact-page-content">
+        <div class="container contact-page-layout">
+          <div class="contact-info-panel">
+            <div class="info-card-item">
+              <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div>
+                <h4>E-mail</h4>
+                <p>contato@talentusrh.com.br</p>
+              </div>
+            </div>
+            <div class="info-card-item">
+              <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+              <div>
+                <h4>WhatsApp</h4>
+                <p>(11) 92707-8797</p>
+              </div>
+            </div>
+            <div class="info-card-item">
+              <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div>
+                <h4>Localização</h4>
+                <p>Jabaquara, São Paulo - SP<br />Atendimento remoto para todo o Brasil</p>
+              </div>
+            </div>
+            <div class="info-card-item">
+              <div class="info-icon"><i class="fa-solid fa-clock"></i></div>
+              <div>
+                <h4>Horário de Atendimento</h4>
+                <p>Segunda a Sexta: 09h - 18h<br />Sábado: 09h - 12h</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-panel">
+            <h3>Envie uma mensagem</h3>
+            <form data-form-type="contato" name="contato-site" method="POST" data-netlify="true" data-netlify-honeypot="bot-field">
+              <input type="hidden" name="form-name" value="contato-site" />
+              <p class="hidden-field"><label>Não preencha: <input name="bot-field" /></label></p>
+              <div class="form-group">
+                <label>Nome</label>
+                <input type="text" name="nome" placeholder="Seu nome" required />
+              </div>
+              <div class="form-group">
+                <label>Mensagem</label>
+                <textarea name="mensagem" placeholder="Como posso te ajudar?" rows="4" required></textarea>
+              </div>
+              <button type="submit" class="btn-action full-width">Enviar Mensagem</button>
+              <p class="form-footer-note">
+                Suas informações serão usadas apenas para responder sua mensagem.
+              </p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container footer-grid">
+        <div class="footer-about">
+          <img src="logo-completo.jpeg" alt="Talentus do RH - Conectando talentos à tecnologia" class="footer-logo" />
+          <h3>Talentus do RH</h3>
+          <p>Recrutamento tech e de outras áreas: processos ágeis e humanizados para conectar empresas e profissionais.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Links Rápidos</h4>
+          <ul>
+            <li><a onclick="switchTab('inicio')">Início</a></li>
+            <li><a onclick="switchTab('sobre')">Sobre</a></li>
+            <li><a onclick="switchTab('servicos')">Serviços</a></li>
+            <li><a onclick="switchTab('empresas')">Empresas</a></li>
+            <li><a onclick="switchTab('candidatos')">Candidatos</a></li>
+          </ul>
+        </div>
+        <div class="footer-info">
+          <h4>Contato</h4>
+          <p>📧 contato@talentusrh.com.br</p>
+          <p>📱 (11) 92707-8797</p>
+          <p>📍 Jabaquara - São Paulo, SP</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Talentus do RH. Todos os direitos reservados.</p>
+        <p>Termos de Uso e Política de Privacidade</p>
+      </div>
+    </footer>
+
+    <a
+      class="whatsapp-float"
+      href="https://wa.me/5511927078797?text=Ol%C3%A1%2C%20vim%20pelo%20site%20da%20Talentus%20do%20RH."
+      target="_blank"
+      rel="noopener"
+      aria-label="Falar no WhatsApp"
+    >
+      <i class="fa-brands fa-whatsapp"></i>
+      <span>WhatsApp</span>
+    </a>
+
+    <script src="script.js"></script>
+  </body>
+</html>
